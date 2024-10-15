@@ -35,12 +35,14 @@ class PkgViewData {
     try {
       return PkgViewData(
         name: json['name'] as String,
-        info: PubPackage.fromJson(json['info'] as Map<String, dynamic>),
+        info: PubPackage.fromJson(
+            jsonEncode(json['info'] as Map<String, dynamic>)),
         metrics: json['metrics'] != null
-            ? PackageMetrics.fromJson(json['metrics'] as Map<String, dynamic>)
+            ? PackageMetrics.fromJson(
+                jsonEncode(json['metrics'] as Map<String, dynamic>))
             : null,
         publisher: PackagePublisher.fromJson(
-            json['publisher'] as Map<String, dynamic>),
+            jsonEncode(json['publisher'] as Map<String, dynamic>)),
       );
     } catch (e, s) {
       logger.file(LogTypeTag.error, 'Failed to parse Json package. Json: $json',

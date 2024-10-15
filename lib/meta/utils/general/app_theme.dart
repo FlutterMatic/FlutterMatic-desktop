@@ -16,18 +16,16 @@ class AppTheme {
     return ThemeData(
       fontFamily: 'NotoSans',
       primaryColor: lightBackgroundColor,
-      backgroundColor: lightBackgroundColor,
       scaffoldBackgroundColor: lightBackgroundColor,
       primaryColorLight: const Color(0xFFF1F1F1),
       splashColor: Colors.transparent,
-      errorColor: errorColor,
+      
       highlightColor: Colors.transparent,
       iconTheme: const IconThemeData(color: Colors.black),
       textTheme: const TextTheme(
-        headline1: TextStyle(color: Colors.black),
-        headline2: TextStyle(color: Colors.black),
-        bodyText1: TextStyle(color: Colors.black),
-        bodyText2: TextStyle(color: Colors.black),
+        headlineLarge: TextStyle(color: Colors.black),
+        headlineMedium: TextStyle(color: Colors.black),
+        headlineSmall: TextStyle(color: Colors.black),
       ),
       colorScheme: ColorScheme.fromSwatch().copyWith(
         secondary: const Color(0xFF79A6DC),
@@ -41,27 +39,26 @@ class AppTheme {
       fontFamily: 'NotoSans',
       canvasColor: darkBackgroundColor,
       primaryColor: darkBackgroundColor,
-      backgroundColor: darkBackgroundColor,
       unselectedWidgetColor: Colors.blueGrey.withOpacity(0.3),
       scaffoldBackgroundColor: darkBackgroundColor,
       primaryColorLight: const Color(0xFF2D333A),
       focusColor: const Color(0xFF444C56),
-      errorColor: errorColor,
+      // errorColor: errorColor,
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       iconTheme: const IconThemeData(color: Colors.white),
       dividerColor: Colors.white,
       textTheme: const TextTheme(
-        headline1: TextStyle(
+        headlineLarge: TextStyle(
           color: Color(0xffFAFAFA),
         ),
-        headline2: TextStyle(
+        headlineMedium: TextStyle(
           color: Color(0xffFAFAFA),
         ),
-        bodyText1: TextStyle(
+        headlineSmall: TextStyle(
           color: Color(0xffFAFAFA),
         ),
-        bodyText2: TextStyle(
+        bodyMedium: TextStyle(
           color: Color(0xffFAFAFA),
         ),
       ),

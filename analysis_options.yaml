@@ -26,7 +26,6 @@ linter:
     camel_case_types: true
     empty_constructor_bodies: true
     prefer_const_constructors: true
-    prefer_const_deceleration: true
     sort_constructors_first: false
     prefer_single_quotes: true
     avoid_empty_else: true

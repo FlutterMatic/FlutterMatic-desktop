@@ -71,9 +71,9 @@ class SetUpButton extends StatelessWidget {
                             style: TextStyle(
                               color: themeState.darkTheme
                                   ? AppTheme
-                                      .lightTheme.textTheme.bodyText1!.color
+                                      .lightTheme.textTheme.bodySmall!.color
                                   : AppTheme
-                                      .darkTheme.textTheme.bodyText1!.color,
+                                      .darkTheme.textTheme.bodySmall!.color,
                               fontWeight: FontWeight.w700,
                             ),
                           ),

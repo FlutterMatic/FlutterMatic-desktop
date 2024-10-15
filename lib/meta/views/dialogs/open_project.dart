@@ -165,7 +165,7 @@ class _OpenProjectInEditorState extends State<OpenProjectInEditor> {
                               style: TextStyle(
                                   color: Theme.of(context)
                                       .textTheme
-                                      .bodyText1!
+                                      .bodySmall!
                                       .color),
                             ),
                           ],
@@ -196,7 +196,7 @@ class _OpenProjectInEditorState extends State<OpenProjectInEditor> {
                               style: TextStyle(
                                   color: Theme.of(context)
                                       .textTheme
-                                      .bodyText1!
+                                      .bodySmall!
                                       .color),
                             ),
                           ],

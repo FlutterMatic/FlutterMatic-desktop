@@ -27,9 +27,10 @@ class ConnectionNotifier extends StateNotifier<NetworkState> {
   /// It's a very lightweight listener that listens to network status changes.
   Future<void> initConnectivity() async {
     try {
-      ConnectivityResult status = await _connectivity.checkConnectivity();
+      List<ConnectivityResult> status =
+          await _connectivity.checkConnectivity();
 
-      if (status == ConnectivityResult.none) {
+      if (status.isEmpty) {
         state = state.copyWith(
           connected: false,
         );
@@ -55,8 +56,8 @@ class ConnectionNotifier extends StateNotifier<NetworkState> {
   /// any connection changes.
   void _startMonitoring() {
     _connectivity.onConnectivityChanged
-        .listen((ConnectivityResult result) async {
-      if (result == ConnectivityResult.none) {
+        .listen((List<ConnectivityResult> result) async {
+      if (result.isEmpty) {
         state = state.copyWith(
           connected: false,
         );

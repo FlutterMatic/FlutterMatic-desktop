@@ -100,8 +100,8 @@ Widget selectBuildTypeTile(
           HSeparators.small(),
           Text(
             text,
-            style:
-                TextStyle(color: Theme.of(context).textTheme.headline1?.color),
+            style: TextStyle(
+                color: Theme.of(context).textTheme.headlineMedium?.color),
           ),
         ],
       ),

@@ -97,7 +97,7 @@ Widget _selectTile(
             shape: BoxShape.circle,
             border: Border.all(color: Colors.white, width: 2),
             color: selected
-                ? Theme.of(context).textTheme.headline1!.color
+                ? Theme.of(context).textTheme.headlineSmall!.color
                 : Theme.of(context).hoverColor,
           ),
         ),
@@ -105,7 +105,7 @@ Widget _selectTile(
         Expanded(
           child: Text(leading,
               style: TextStyle(
-                  color: Theme.of(context).textTheme.bodyText1!.color)),
+                  color: Theme.of(context).textTheme.bodySmall!.color)),
         ),
       ],
     ),

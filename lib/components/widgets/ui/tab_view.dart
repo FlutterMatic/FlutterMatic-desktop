@@ -102,7 +102,7 @@ Widget _tabItemWidget(
         style: TextStyle(
             color: Theme.of(context)
                 .textTheme
-                .bodyText1!
+                .bodySmall!
                 .color!
                 .withOpacity(selected ? 1 : .4)),
       ),

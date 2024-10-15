@@ -87,7 +87,7 @@ Widget _buttonListTile(
           child: Text(
             title,
             style:
-                TextStyle(color: Theme.of(context).textTheme.bodyText1!.color),
+                TextStyle(color: Theme.of(context).textTheme.bodySmall!.color),
           ),
         ),
         if (trailing != null) trailing,

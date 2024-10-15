@@ -33,7 +33,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": true
+    "editor.wordBasedSuggestions": "matchingDocuments"
   },
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1,

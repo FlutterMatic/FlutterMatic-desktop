@@ -50,7 +50,7 @@ SnackBar snackBarTile(
         Flexible(
           child: Text(
             message,
-            style: AppTheme.lightTheme.textTheme.bodyText1,
+            style: AppTheme.lightTheme.textTheme.bodySmall,
           ),
         ),
       ],

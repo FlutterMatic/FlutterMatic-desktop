@@ -78,7 +78,7 @@ class CustomTextField extends StatelessWidget {
           keyboardType: keyboardType ?? TextInputType.text,
           obscureText: obscureText,
           maxLines: numLines ?? 1,
-          style: TextStyle(color: Theme.of(context).textTheme.bodyText1!.color),
+          style: TextStyle(color: Theme.of(context).textTheme.bodySmall!.color),
           inputFormatters: filterFormatters ??
               <TextInputFormatter>[
                 filteringTextInputFormatter ??
@@ -98,14 +98,14 @@ class CustomTextField extends StatelessWidget {
             counterStyle: TextStyle(
               color: Theme.of(context)
                   .textTheme
-                  .bodyText1!
+                  .bodySmall!
                   .color!
                   .withOpacity(0.75),
             ),
             hintStyle: TextStyle(
                 color: Theme.of(context)
                     .textTheme
-                    .bodyText1!
+                    .bodySmall!
                     .color!
                     .withOpacity(0.75),
                 fontSize: 15),
